@@ -1,0 +1,17 @@
+# Keep compiled output, local knowledge, databases, and execution logs off GitHub.
+/target/
+/dist/
+/recon
+/recon.exe
+/.recon/
+/.recon-state/
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.log
+.env
+.env.*
+!.env.example

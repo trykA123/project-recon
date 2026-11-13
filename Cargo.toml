@@ -1,0 +1,31 @@
+# Builds the portable RECON CLI; operational knowledge lives outside source control.
+[package]
+name = "recon"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.99"
+publish = false
+
+[dependencies]
+clap = { version = "=4.6.7", features = ["derive"] }
+cap-std = "=3.4.6"
+rusqlite = { version = "=0.41.1", features = ["bundled"] }
+serde = { version = "=1.0.229", features = ["derive"] }
+serde_json = "=1.0.154"
+sha2 = "=0.11.1"
+thiserror = "=2.0.21"
+
+[target.'cfg(unix)'.dependencies]
+libc = "=0.2.191"
+
+[dev-dependencies]
+tempfile = "=3.27.0"
+proptest = "=1.12.0"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+undocumented_unsafe_blocks = "deny"
+too_many_lines = "warn"
+too_many_arguments = "warn"

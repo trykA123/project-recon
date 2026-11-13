@@ -6,7 +6,7 @@
 
 **AGENTS FORGET. RECON REMEMBERS.**
 
-`// MEMORY SYSTEMS ONLINE — ARCHITECTURE IN DEVELOPMENT`
+`// RECON CORE — LOCAL CLI PROTOTYPE`
 
 ---
 
@@ -82,7 +82,7 @@ A local-first, harness-independent knowledge and context system for AI-assisted 
 
 **Design proposal:** a single SQLite source of truth, accessed through a small Rust CLI. Agents request focused context and submit controlled updates. Markdown and HTML are optional exports, not parallel databases.
 
-This is a **target architecture**, not a claim that every subsystem is already implemented.
+The first Rust CLI prototype implements scoped memory, retrieval, task checkpoints, and validated Librarian routing. Automatic indexing and model-provider integrations remain future work.
 
 ## 03 // THE LIBRARIAN PROTOCOL
 
@@ -138,11 +138,16 @@ A memory system that saves 8,000 tokens downstream but spends 12,000 upstream is
 | System | Status |
 | :-- | :-- |
 | Multi-harness, Markdown-based task-memory prototype | **Prototype exists; migration decisions pending** |
-| Rust CLI + SQLite knowledge core | **Proposed** |
-| Structured entity / observation / evidence graph | **Proposed** |
-| Cached Librarian and on-demand Scout verification | **Experimental design** |
-| Benchmark harness and cost accounting | **Planned** |
+| Rust CLI + SQLite knowledge core | **Implemented prototype** |
+| Structured entity / observation / evidence graph | **Implemented prototype** |
+| Versioned Librarian directory and validated routes | **Implemented; model reasoning runs in the calling harness** |
+| Targeted evidence freshness checks | **Implemented; semantic Scout verification remains a harness role** |
+| Run cost records and audit journal | **Implemented; comparative benchmark trials deferred** |
 | GPUI knowledge explorer (read-only first) | **Future** |
+
+Build from source with `cargo build --release --locked`. Start with `target/release/recon --help`.
+
+See [usage and local-state setup](docs/usage.md), the [CLI contract](docs/cli-contract.md), and the [source map](ARCHITECTURE.md). `make check` runs the technical gate. Git contains source; operational knowledge, SQLite databases, and compiled binaries stay local.
 
 The first rule of RECON is simple: **measure before declaring victory**.
 

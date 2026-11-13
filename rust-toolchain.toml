@@ -1,0 +1,5 @@
+# Reproduces the compiler used for this CLI; dependencies are pinned in Cargo.lock.
+[toolchain]
+channel = "1.99.1"
+components = ["clippy", "rustfmt"]
+profile = "minimal"
