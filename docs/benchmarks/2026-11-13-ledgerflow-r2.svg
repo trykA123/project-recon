@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 720" width="1160" height="720" font-family="Inter, ui-sans-serif, system-ui, -apple-system, sans-serif">
+  <rect width="1160" height="720" rx="12" fill="#0f172a"/>
+  <text x="28" y="38" fill="#f8fafc" font-size="20" font-weight="700">RECON Round 2 — Multi-File Ledgerflow Benchmark (4 Models × 4 Arms, 360s Limit)</text>
+  <text x="28" y="62" fill="#94a3b8" font-size="13">Librarian: Claude Haiku 5.5 (medium) on 20-entity corpora (5/20 related · 7–9/20 task, $0.0031–$0.0095/route). List prices in USD.</text>
+  <rect x="28" y="76" width="12" height="12" rx="2" fill="#10b981"/>
+  <text x="46" y="86" fill="#cbd5e1" font-size="12">Full Pass (make check + 20/20)</text>
+  <rect x="250" y="76" width="12" height="12" rx="2" fill="#f59e0b"/>
+  <text x="268" y="86" fill="#cbd5e1" font-size="12">20/20 Sealed Acceptance (timeout before gate)</text>
+  <rect x="560" y="76" width="12" height="12" rx="2" fill="#ef4444"/>
+  <text x="578" y="86" fill="#cbd5e1" font-size="12">Timeout 0/20</text>
+  <text x="28" y="118" fill="#94a3b8" font-size="12" font-weight="600">MODEL / ARM</text>
+  <text x="290" y="118" fill="#94a3b8" font-size="12" font-weight="600">WALL TIME (seconds) &amp; OUTCOME</text>
+  <text x="720" y="118" fill="#94a3b8" font-size="12" font-weight="600">TOTAL LIST COST (USD, incl. Haiku 5.5)</text>
+  <line x1="290.0" y1="126" x2="290.0" y2="652" stroke="#1e293b" stroke-width="1"/>
+  <text x="290.0" y="668" fill="#64748b" font-size="11" text-anchor="middle">0s</text>
+  <line x1="371.6" y1="126" x2="371.6" y2="652" stroke="#1e293b" stroke-width="1"/>
+  <text x="371.6" y="668" fill="#64748b" font-size="11" text-anchor="middle">100s</text>
+  <line x1="453.2" y1="126" x2="453.2" y2="652" stroke="#1e293b" stroke-width="1"/>
+  <text x="453.2" y="668" fill="#64748b" font-size="11" text-anchor="middle">200s</text>
+  <line x1="534.7" y1="126" x2="534.7" y2="652" stroke="#1e293b" stroke-width="1"/>
+  <text x="534.7" y="668" fill="#64748b" font-size="11" text-anchor="middle">300s</text>
+  <line x1="583.7" y1="126" x2="583.7" y2="652" stroke="#fb7185" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="583.7" y="668" fill="#fb7185" font-size="11" text-anchor="middle">360s limit</text>
+  <line x1="720.0" y1="126" x2="720.0" y2="652" stroke="#1e293b" stroke-width="1"/>
+  <text x="720.0" y="668" fill="#64748b" font-size="11" text-anchor="middle">$0.00</text>
+  <line x1="785.5" y1="126" x2="785.5" y2="652" stroke="#1e293b" stroke-width="1"/>
+  <text x="785.5" y="668" fill="#64748b" font-size="11" text-anchor="middle">$0.15</text>
+  <line x1="850.9" y1="126" x2="850.9" y2="652" stroke="#1e293b" stroke-width="1"/>
+  <text x="850.9" y="668" fill="#64748b" font-size="11" text-anchor="middle">$0.30</text>
+  <line x1="916.4" y1="126" x2="916.4" y2="652" stroke="#1e293b" stroke-width="1"/>
+  <text x="916.4" y="668" fill="#64748b" font-size="11" text-anchor="middle">$0.45</text>
+  <rect x="20" y="132" width="1120" height="122" rx="8" fill="#1e293b" fill-opacity="0.45" stroke="#334155" stroke-width="1"/>
+  <text x="32" y="152" fill="#e2e8f0" font-size="13" font-weight="700">deepseek-flash (max)</text>
+  <text x="40" y="173" fill="#cbd5e1" font-size="12">1. No context</text>
+  <rect x="290" y="162" width="246.5" height="14" rx="3" fill="#10b981"/>
+  <text x="542.5" y="173" fill="#e2e8f0" font-size="11">302.1s · PASS (20/20)</text>
+  <rect x="720" y="162" width="17.4" height="14" rx="3" fill="#38bdf8"/>
+  <text x="743.4" y="173" fill="#e2e8f0" font-size="11">$0.0399</text>
+  <text x="40" y="195" fill="#cbd5e1" font-size="12">2. Direct handoff</text>
+  <rect x="290" y="184" width="140.0" height="14" rx="3" fill="#10b981"/>
+  <text x="436.0" y="195" fill="#e2e8f0" font-size="11">171.6s · PASS (20/20)</text>
+  <rect x="720" y="184" width="10.9" height="14" rx="3" fill="#38bdf8"/>
+  <text x="736.9" y="195" fill="#e2e8f0" font-size="11">$0.0251</text>
+  <text x="40" y="217" fill="#cbd5e1" font-size="12">3. RECON task (20e)</text>
+  <rect x="290" y="206" width="165.2" height="14" rx="3" fill="#10b981"/>
+  <text x="461.2" y="217" fill="#e2e8f0" font-size="11">202.5s · PASS (20/20)</text>
+  <rect x="720" y="206" width="15.8" height="14" rx="3" fill="#38bdf8"/>
+  <rect x="735.8" y="206" width="2.0" height="14" rx="2" fill="#c084fc"/>
+  <text x="743.3" y="217" fill="#e2e8f0" font-size="11">$0.0397 (+$0.0036 Haiku)</text>
+  <text x="40" y="239" fill="#cbd5e1" font-size="12">4. RECON related (20e)</text>
+  <rect x="290" y="228" width="156.2" height="14" rx="3" fill="#10b981"/>
+  <text x="452.2" y="239" fill="#e2e8f0" font-size="11">191.4s · PASS (20/20)</text>
+  <rect x="720" y="228" width="13.0" height="14" rx="3" fill="#38bdf8"/>
+  <rect x="733.0" y="228" width="2.0" height="14" rx="2" fill="#c084fc"/>
+  <text x="740.5" y="239" fill="#e2e8f0" font-size="11">$0.0332 (+$0.0033 Haiku)</text>
+  <rect x="20" y="262" width="1120" height="122" rx="8" fill="#1e293b" fill-opacity="0.45" stroke="#334155" stroke-width="1"/>
+  <text x="32" y="282" fill="#e2e8f0" font-size="13" font-weight="700">qwen4-max-preview (medium)</text>
+  <text x="40" y="303" fill="#cbd5e1" font-size="12">1. No context</text>
+  <rect x="290" y="292" width="244.8" height="14" rx="3" fill="#10b981"/>
+  <text x="540.8" y="303" fill="#e2e8f0" font-size="11">300.1s · PASS (20/20)</text>
+  <rect x="720" y="292" width="121.7" height="14" rx="3" fill="#38bdf8"/>
+  <text x="847.7" y="303" fill="#e2e8f0" font-size="11">$0.2788</text>
+  <text x="40" y="325" fill="#cbd5e1" font-size="12">2. Direct handoff</text>
+  <rect x="290" y="314" width="241.1" height="14" rx="3" fill="#10b981"/>
+  <text x="537.1" y="325" fill="#e2e8f0" font-size="11">295.6s · PASS (20/20)</text>
+  <rect x="720" y="314" width="121.4" height="14" rx="3" fill="#38bdf8"/>
+  <text x="847.4" y="325" fill="#e2e8f0" font-size="11">$0.2783</text>
+  <text x="40" y="347" fill="#cbd5e1" font-size="12">3. RECON task (20e)</text>
+  <rect x="290" y="336" width="294.3" height="14" rx="3" fill="#f59e0b"/>
+  <text x="590.3" y="347" fill="#e2e8f0" font-size="11">360.8s · 20/20 acc</text>
+  <rect x="720" y="336" width="156.2" height="14" rx="3" fill="#38bdf8"/>
+  <rect x="876.2" y="336" width="4.2" height="14" rx="2" fill="#c084fc"/>
+  <text x="886.3" y="347" fill="#e2e8f0" font-size="11">$0.3674 (+$0.0095 Haiku)</text>
+  <text x="40" y="369" fill="#cbd5e1" font-size="12">4. RECON related (20e)</text>
+  <rect x="290" y="358" width="254.3" height="14" rx="3" fill="#10b981"/>
+  <text x="550.3" y="369" fill="#e2e8f0" font-size="11">311.8s · PASS (20/20)</text>
+  <rect x="720" y="358" width="152.7" height="14" rx="3" fill="#38bdf8"/>
+  <rect x="872.7" y="358" width="2.0" height="14" rx="2" fill="#c084fc"/>
+  <text x="880.1" y="369" fill="#e2e8f0" font-size="11">$0.3531 (+$0.0031 Haiku)</text>
+  <rect x="20" y="392" width="1120" height="122" rx="8" fill="#1e293b" fill-opacity="0.45" stroke="#334155" stroke-width="1"/>
+  <text x="32" y="412" fill="#e2e8f0" font-size="13" font-weight="700">qwen3.8-flash (max)</text>
+  <text x="40" y="433" fill="#cbd5e1" font-size="12">1. No context</text>
+  <rect x="290" y="422" width="294.3" height="14" rx="3" fill="#ef4444"/>
+  <text x="590.3" y="433" fill="#e2e8f0" font-size="11">360.7s · 0/20 timeout</text>
+  <rect x="720" y="422" width="2.1" height="14" rx="3" fill="#38bdf8"/>
+  <text x="728.1" y="433" fill="#e2e8f0" font-size="11">$0.0049</text>
+  <text x="40" y="455" fill="#cbd5e1" font-size="12">2. Direct handoff</text>
+  <rect x="290" y="444" width="294.3" height="14" rx="3" fill="#10b981"/>
+  <text x="590.3" y="455" fill="#e2e8f0" font-size="11">360.7s · PASS (20/20)</text>
+  <rect x="720" y="444" width="14.6" height="14" rx="3" fill="#38bdf8"/>
+  <text x="740.6" y="455" fill="#e2e8f0" font-size="11">$0.0335</text>
+  <text x="40" y="477" fill="#cbd5e1" font-size="12">3. RECON task (20e)</text>
+  <rect x="290" y="466" width="294.3" height="14" rx="3" fill="#f59e0b"/>
+  <text x="590.3" y="477" fill="#e2e8f0" font-size="11">360.8s · 20/20 acc</text>
+  <rect x="720" y="466" width="13.3" height="14" rx="3" fill="#38bdf8"/>
+  <rect x="733.3" y="466" width="2.0" height="14" rx="2" fill="#c084fc"/>
+  <text x="740.8" y="477" fill="#e2e8f0" font-size="11">$0.0340 (+$0.0035 Haiku)</text>
+  <text x="40" y="499" fill="#cbd5e1" font-size="12">4. RECON related (20e)</text>
+  <rect x="290" y="488" width="294.3" height="14" rx="3" fill="#f59e0b"/>
+  <text x="590.3" y="499" fill="#e2e8f0" font-size="11">360.7s · 20/20 acc</text>
+  <rect x="720" y="488" width="10.4" height="14" rx="3" fill="#38bdf8"/>
+  <rect x="730.4" y="488" width="2.0" height="14" rx="2" fill="#c084fc"/>
+  <text x="737.7" y="499" fill="#e2e8f0" font-size="11">$0.0268 (+$0.0031 Haiku)</text>
+  <rect x="20" y="522" width="1120" height="122" rx="8" fill="#1e293b" fill-opacity="0.45" stroke="#334155" stroke-width="1"/>
+  <text x="32" y="542" fill="#e2e8f0" font-size="13" font-weight="700">gemini-3.8-flash-high (high)</text>
+  <text x="40" y="563" fill="#cbd5e1" font-size="12">1. No context</text>
+  <rect x="290" y="552" width="295.9" height="14" rx="3" fill="#ef4444"/>
+  <text x="591.9" y="563" fill="#e2e8f0" font-size="11">362.7s · 0/20 timeout</text>
+  <rect x="720" y="552" width="154.9" height="14" rx="3" fill="#38bdf8"/>
+  <text x="880.9" y="563" fill="#e2e8f0" font-size="11">$0.3551</text>
+  <text x="40" y="585" fill="#cbd5e1" font-size="12">2. Direct handoff</text>
+  <rect x="290" y="574" width="296.4" height="14" rx="3" fill="#ef4444"/>
+  <text x="592.4" y="585" fill="#e2e8f0" font-size="11">363.3s · 0/20 timeout</text>
+  <rect x="720" y="574" width="184.7" height="14" rx="3" fill="#38bdf8"/>
+  <text x="910.7" y="585" fill="#e2e8f0" font-size="11">$0.4232</text>
+  <text x="40" y="607" fill="#cbd5e1" font-size="12">3. RECON task (20e)</text>
+  <rect x="290" y="596" width="296.4" height="14" rx="3" fill="#ef4444"/>
+  <text x="592.4" y="607" fill="#e2e8f0" font-size="11">363.4s · 0/20 timeout</text>
+  <rect x="720" y="596" width="222.7" height="14" rx="3" fill="#38bdf8"/>
+  <rect x="942.7" y="596" width="4.1" height="14" rx="2" fill="#c084fc"/>
+  <text x="952.7" y="607" fill="#e2e8f0" font-size="11">$0.5195 (+$0.0093 Haiku)</text>
+  <text x="40" y="629" fill="#cbd5e1" font-size="12">4. RECON related (20e)</text>
+  <rect x="290" y="618" width="295.8" height="14" rx="3" fill="#ef4444"/>
+  <text x="591.8" y="629" fill="#e2e8f0" font-size="11">362.6s · 0/20 timeout</text>
+  <rect x="720" y="618" width="95.4" height="14" rx="3" fill="#38bdf8"/>
+  <rect x="815.4" y="618" width="2.0" height="14" rx="2" fill="#c084fc"/>
+  <text x="822.8" y="629" fill="#e2e8f0" font-size="11">$0.2217 (+$0.0031 Haiku)</text>
+  <text x="28" y="698" fill="#38bdf8" font-size="12" font-weight="600">Takeaway: On deepseek-flash (max), context cut time 33–43% (302s → 172–203s) &amp; cost up to 37%. On qwen3.8-flash (max), context lifted acceptance 0/20 → 20/20.</text>
+</svg>

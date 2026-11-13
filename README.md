@@ -165,6 +165,18 @@ Twelve independent first attempts (`gpt-6.1-sol`, `qwen4-max-preview`, `gemini-4
 
 See the full measurements, list-price conversions, and shared setup costs in [docs/benchmarks/2026-11-13-ci-waves-pilot.md](docs/benchmarks/2026-11-13-ci-waves-pilot.md).
 
+## 08 // ROUND 2 BENCHMARK: MULTI-FILE LEDGERFLOW (2026-11-13)
+
+Sixteen independent runs across four models (`deepseek-flash` max, `qwen4-max-preview` medium, `qwen3.8-flash` max, `gemini-3.8-flash-high` high) × four context arms (`360 s` limit) on a 4-module Python settlement engine (`ledgerflow`), with `claude-haiku-5-5` (`medium`) routing **20-entity** RECON corpora (`5/20` selected on `recon-related`, `7–9/20` on `recon-task`, `$0.0031–$0.0095`/route).
+
+![RECON Round 2 Benchmark Chart](docs/benchmarks/2026-11-13-ledgerflow-r2.svg)
+
+- **`deepseek-flash` (`max`) — 4/4 full pass, 33%–43% faster with context:** `no-context` took `302.1 s` (`$0.0399`); `direct-handoff` dropped to `171.6 s` (`$0.0251`, `-37%` cost), `recon-related` to `191.4 s` (`$0.0332`), and `recon-task` to `202.5 s` (`$0.0397`).
+- **`qwen3.8-flash` (`max`) — Context lifted acceptance from `0/20` to `20/20`:** Without context it timed out at `0/20`; all three context arms reached `20/20` sealed acceptance (`direct-handoff` also passed `make check`).
+- **`qwen4-max-preview` (`medium`) & `gemini-3.8-flash-high` (`high`):** `qwen4-max-preview` passed `20/20` acceptance on all 4 arms (`3/4` full gate pass); `gemini-3.8-flash-high` hit `360 s` `print_timeout` (`0/20`) on all 4 arms.
+
+See the full 16-run table and list-price breakdown in [docs/benchmarks/2026-11-13-ledgerflow-r2.md](docs/benchmarks/2026-11-13-ledgerflow-r2.md).
+
 ---
 
 <div align="center">
